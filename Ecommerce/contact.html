@@ -1,0 +1,52 @@
+<button id="btn">chat with us </button>
+<div class="contactbox">
+    <h1 >PH NO: 8531826276</h1>
+    <h1>mail: bavithmariyan12@gmail.com</h1>
+</div>
+<script>
+    var button=document.getElementById("btn")
+    button.addEventListener("click",function(){
+        alert("here is our contact info if you want anything about our company please contact the below ,we will reach you out soon as possible ")
+    })
+
+</script>
+<input id="input">
+<button onclick="add()">Add</button>
+<ul id="list-container">
+    <li>any query about us 
+        <button onclick="deleteitem(event)">delete</button>
+    </li>
+</ul>
+<script>
+    var ul=document.getElementById("list-container")
+    var input=document.getElementById("input")
+    function add()
+    {
+        var listitem= document.createElement("li")
+        listitem.innerHTML=input.value + "<button onclick='deleteitem(event)'>delete</button>"
+        ul.append(listitem)  
+        
+        }
+        function deleteitem(event)
+        {
+            event.target.parentElement.remove()
+        }
+</script>
+<style>
+    .contactbox{
+        padding: 10%;
+        background-color: black;
+        color: white;
+    
+    }
+    #input{
+        padding:7px;
+        border: 50%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        align-items: center;
+        border-top: 10%;
+    
+        
+    }
+ 
+</style>
