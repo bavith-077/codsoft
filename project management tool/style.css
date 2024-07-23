@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form button {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.projects-container {
+    margin-top: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin: 0;
+}
+
+.project .tasks {
+    margin-top: 10px;
+}
+
+.project .tasks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project .tasks ul li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 5px;
+}
